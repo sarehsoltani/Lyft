@@ -1,2 +1,2 @@
-# LyftApp
+# Lyft
 Run: npm run dev
