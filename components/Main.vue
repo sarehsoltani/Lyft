@@ -164,7 +164,6 @@
       next() {
         this.$refs.slick.next();
       },
-
       prev() {
         this.$refs.slick.prev();
       },
