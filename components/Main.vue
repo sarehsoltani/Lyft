@@ -73,9 +73,8 @@
           <h3>Lyft Insurance Protection</h3>
           <p class="pr-1">Lyft provides additional insurance policies,
             at no cost to the driver. We worked with leading insurance
-            carriers to provide various coverages including:
-            commercial auto liability insurance up to $1M
-            occurrence, contingent comprehensive and collision
+            carriers to provide various coverages including:commercial auto liability
+            insurance up to $1M occurrence, contingent comprehensive and collision
             insurance for drivers who carry comprehensive and collision
             coverage on their personal auto policy, and coverage for bodily
             injury caused by uninsured/underinsured motorists when you are engaged
