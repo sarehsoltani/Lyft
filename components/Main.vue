@@ -133,7 +133,6 @@
       <button type="button" class="btn ml-5 mr-4">No, Thanks</button>
       <button type="button" class="btn1">Yes</button>
     </div>
-
   </div>
 </template>
 
@@ -161,7 +160,6 @@
         },
       };
     },
-
     methods: {
       next() {
         this.$refs.slick.next();
@@ -171,32 +169,7 @@
         this.$refs.slick.prev();
       },
     }
-//        SliderImages: [
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//          {
-//            image: '../assets/images/6.jpg'
-//          },
-//
-//        ]
-//
-  }
+}
 </script>
 
 <style>
