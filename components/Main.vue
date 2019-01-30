@@ -25,6 +25,32 @@
         </div>
       </div>
     </div>
+    <div class="Introduce container mr-5 mb-5 mt-5">
+      <h3 class="col-12 mb-4">What is Lyft?</h3>
+      <p class="col-7">Lyft matches drivers with passengers who request rides through our smartphone app, and passengers pay automatically through the app.</p>
+      <br>
+      <p class="col-7 ">Whether you’re trying to offset costs of your car, cover this month’s bills, or fund your dreams, Lyft will get you there. So, go ahead. Be your own boss.</p>
+      <br>
+      <h3 class="col-12 mt-5 mb-5">Why Lyft?</h3>
+      <div class="d-flex flex-row">
+        <div class="col-4">
+          <img src="https://cdn.lyft.com/brochure/drive-for-lyft-tip.2f3fb8aa.svg" alt="Keep your tips" class="_3HIEj7 text-bold m-y-m" data-reactid="126">
+          <h6 class="mb-4">Keep Your Tips</h6>
+          <p>Earn tips from your passengers and keep the whole amount — they’re yours.</p>
+        </div>
+        <div class="col-4">
+          <img src="https://cdn.lyft.com/brochure/drive-for-lyft-pay.90278969.svg" alt="Make more money" class="_3HIEj7 text-bold m-y-m" data-reactid="131">
+          <h6 class="mb-4">Make More Money</h6>
+          <p>With increased Prime Time pricing during peak hours, you make more with Lyft.</p>
+        </div>
+        <div class="col-4">
+          <img src="https://cdn.lyft.com/brochure/drive-for-lyft-community.a243fe20.svg" alt="Best community" class="_3HIEj7 text-bold m-y-m" data-reactid="136">
+          <h6 class="mb-4">Best Community</h6>
+          <p>The Lyft community is full of awesome, friendly people — passengers and drivers alike.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
