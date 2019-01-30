@@ -64,6 +64,40 @@
       <h3 class="col-4 ml-5 p-4">How Lyft Driving Works</h3>
       <span>{{ selected }}</span>
     </div>
+    <div class="content mt-5">
+      <div class="d-flex p-5">
+        <div class="col-md-offset-2 mr-4 mt-5 p-5">
+          <img  src="https://cdn.lyft.com/brochure/drive-for-lyft-shield.88213cf8.png" alt="Lyft insurance protection shield" class="_5nJMsT _2HGDap center-block m-y-m" data-reactid="195">
+        </div>
+        <div class="col-md-6 mt-5 p-1">
+          <h3>Lyft Insurance Protection</h3>
+          <p class="pr-1">Lyft provides additional insurance policies,
+            at no cost to the driver. We worked with leading insurance
+            carriers to provide various coverages including:
+            commercial auto liability insurance up to $1M
+            occurrence, contingent comprehensive and collision
+            insurance for drivers who carry comprehensive and collision
+            coverage on their personal auto policy, and coverage for bodily
+            injury caused by uninsured/underinsured motorists when you are engaged
+            in a ride. If you already carry commercial insurance or personal coverage
+            providing specific coverage for ridesharing, Lyft’s policy will continue
+            to be excess to your insurance coverage. Please note, the above coverage
+            may be modified to comply with local regulations or state laws. Our policy
+            is available in all states in the U.S., except for those rides originating
+            in New York City with a TLC (Taxi and Limousine Commission) driver.<br><a href="#">Get information about our insurance policies.</a></p>
+        </div>
+      </div>
+      <div class="d-flex p-5">
+        <div class="col-md-offset-2 mr-4 mt-3 p-5">
+          <img src="https://cdn.lyft.com/brochure/drive-for-lyft-five-stars.ab6c1047.png" alt="Five star rating" class="_5nJMsT _2HGDap center-block m-y-m" data-reactid="201">
+        </div>
+        <div class="col-md-6 mt-5 p-1">
+          <h3>Passenger Ratings</h3>
+          <p class="pr-1">Drivers rate passengers after each ride, so you’ve always got a say. We also require passengers to provide valid credit card information for identity verification purposes.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
