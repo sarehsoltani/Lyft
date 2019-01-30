@@ -97,6 +97,42 @@
         </div>
       </div>
     </div>
+    <div class="container mt-5 p-5">
+      <h3 class="row h-100 justify-content-center p-5">Frequently Asked Questions</h3>
+      <hr class="col-7 mt-5">
+      <div class="container col-7 Question d-flex flex-column justify-content-center">
+        <h4 class="pt-5 pr-5 pl-5">I already have a job, so can I just drive a few hours in my off-time?</h4>
+        <p class="pr-5 pl-5">Absolutely. You choose when you drive. Some drivers make more than $800 just driving Friday nights and weekends.</p>
+        <hr class="col-11 mt-5">
+      </div>
+      <div class="container col-7 Question d-flex flex-column justify-content-center">
+        <h4 class="pt-5 pr-5 pl-5">How do I get paid?</h4>
+        <p class="pr-5 pl-5">Drivers get paid for every trip on a per minute and mile basis. Money is deposited into your account each week automatically, or you can cash out instantly with Express Pay.</p>
+        <hr class="col-11 mt-5">
+      </div>
+      <div class="container col-7 Question d-flex flex-column justify-content-center">
+        <h4 class="pt-5 pr-5 pl-5">Is Lyft safe?</h4>
+        <p class="pr-5 pl-5">Our community’s safety is our top priority. We run extensive background checks on drivers, provide up to $1M commercial automobile liability policy, and designed numerous safety features into our app. Passengers must provide a valid credit card and phone number for identity verification purposes. Drivers and passengers also rate each other at the end of a ride, so that we’re always upholding our high community standards.</p>
+        <hr class="col-11 mt-5">
+      </div>
+      <div class="container col-7 Question d-flex flex-column justify-content-center">
+        <h4 class="pt-5 pr-5 pl-5">What are Lyft’s requirements?</h4>
+        <p class="pr-5 pl-5">You must be at least 21 and own an iPhone or Android phone. As part of our approval process, you’ll undergo a DMV check, plus a national and county background check. This will require a Social Security number, in addition to an in-state driver’s license that is at least a year old. Learn more about our background check standards on our <a href="#">Safety page</a>, and our comprehensive driver requirements in the <a href="#">Help Center.</a></p>
+        <hr class="col-11 mt-5">
+      </div>
+      <div class="container col-7 Question d-flex flex-column justify-content-center">
+        <a href="#" class="pr-5 pl-5">See more commonly asked questions</a>
+      </div>
+      <div class="container row h-100 justify-content-center mt-5 p-5">
+      <button type="button" class="btn">Apply Now</button>
+      </div>
+    </div>
+    <hr>
+    <div class="footer mt-5 mb-3 p-3 row h-100 justify-content-center">
+      <p class="p-3">Interested in driving for Lyft?</p>
+      <button type="button" class="btn ml-5 mr-4">No, Thanks</button>
+      <button type="button" class="btn1">Yes</button>
+    </div>
 
   </div>
 </template>
