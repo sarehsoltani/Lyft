@@ -1,144 +1,336 @@
 <template>
-  <div class="main">
-    <div class="header">
-      <div class="logo container p-3 pt-5 mb-5 col-12">
-        <a href="https://www.lyft.com/drive-with-lyft"><img src="../assets/lyft-logo-png-4.png"></a>
-      </div>
-      <div class="SignUp container mt-5 ">
-        <h1 class="container col-12"> Drive toward what matters.</h1>
-        <p> Sign up to drive</p>
+  <div class="body">
+      <div class="header">
+        <div class="logo container p-3 pt-5 mb-5 col-12">
+          <a href="https://www.lyft.com/drive-with-lyft"><img src="../assets/lyft-logo-png-4.png"></a>
+        </div>
+      <div class="SignUp container col-12 mt-5 ">
+        <h1 id="header"> {{message}}</h1>
+        <p> {{msg1}}</p>
         <p> Let's start with your phone number - we'll text you a code to verify your phone.</p>
+        <div class="mb-3">
+          <input type="radio" class="select" id="hasCar" name="drone" value="hasCar" checked>
+          <label class="p-3 mr-3" for="hasCar"> I have a car</label>
+          <input type="radio" class="select" id="need" name="drone" value="need">
+          <label class="p-3" for="need">I need a car</label>
+        </div>
+        <input type="text" name="phone" lang="en"  id="phone" placeholder="Mobile Phone Number" class="mb-3 radius border ">
+        <input type="checkbox" class="ml-5 mr-2" id="agreeToTerms" name="agreeToTerms" lang="en" value="on">
+        <label class="m-1">I agree to Lyft’s Terms of Service</label>
+        <div>
+          <button type="button" class="btn mt-4 mb-2">Next</button>
+          <p class="m-3 mt-4 mb-5">Already applied?<br>
+            Check the status of your application here.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-    <!--
-    <h1>{{ msg }}</h1>
-
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_  blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
-    -->
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import Slick from 'vue-slick'
+  export default {
+    components: {
+      Slick,
+    },
+    props: {
+      images: Array,
+    },
+    data () {
+      return {
+        message: 'Drive toward what matters.',
+        msg1: 'Sign up to drive',
+        slickOptions: {
+          arrows: false,
+	        autoplay: true,
+          autoplaySpeed: 500,
+          fade: true,
+          fadeSpeed: 100,
+          dots: true,
+          infinite: true,
+        },
+      };
+    },
+
+    methods: {
+      next() {
+        this.$refs.slick.next();
+      },
+
+      prev() {
+        this.$refs.slick.prev();
+      },
     }
+//        SliderImages: [
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//          {
+//            image: '../assets/images/6.jpg'
+//          },
+//
+//        ]
+//
   }
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+  @import "../../node_modules/slick-carousel/slick/slick.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 
+div {
+  overflow: hidden;
+}
+
 .header{
-  /*height: 100px;*/
   background-color: rgb(119, 94, 240);
 }
+
 .logo img{
   width: 80px;
+}
+
+input::placeholder{
+  color: whitesmoke;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: whitesmoke;
+  font-family: Calibri;
 }
 
 .SignUp{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: white;
 }
+
+.SignUp p{
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: white;
+  font-family: Calibri;
+}
+
+.SignUp .select{
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  border: 2px solid #ac9af5;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(119, 94, 240);
+  position: relative;
+}
+
+.SignUp .select:checked:after {
+  content: " ";
+  position: absolute;
+  background: #fff;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  border-color: #785ef0;
+  border: 1px solid #785ef0;
+}
+
+.SignUp #phone {
+  background: #5646c0;
+  border: none;
+  border-top: 2px solid #41358f;
+  color: #fff;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.25rem;
+  font-size: 1.9rem;
+  border-radius: 10px;
+}
+
+.SignUp #agreeToTerms{
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  border: 3px solid #ac9af5;
+  border-radius: 1px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(119, 94, 240);
+  position: relative;
+}
+
+.SignUp #agreeToTerms:checked:after {
+  content: " ";
+  position: absolute;
+  background: #fff;
+  border-radius: 1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #785ef0;
+}
+
+.IPhone{
+  position: absolute;
+  top:0;
+  background-image:url(https://cdn.lyft.com/brochure/phone@1x.c7273ad8.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 500px;
+  height: 630px;
+  width: 350px;
+}
+
 h1{
   font-size: 5em;
   font-weight: bold;
 }
-ul {
+
+h3{
+  font-size: 3.4em;
+  font-weight: bold;
+}
+
+h6{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.Introduce p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #373a3c;
+  font-family: Calibri;
+}
+
+.Introduce img{
+  width: 11rem;
+  height: 11rem;
+}
+
+.App{
+  background-image: url(https://cdn.lyft.com/brochure/bg_img.e12d60d0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.content{
+  background-color: whitesmoke;
+}
+
+.content img{
+  width: 13rem;
+  height: 13rem;
+}
+
+.content p{
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #373a3c;
+  font-family: Calibri;
+}
+
+.content a{
+  text-decoration: solid;
+}
+
+.Question p{
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #373a3c;
+  font-family: Calibri;
+}
+
+.btn1{
+  min-width: 200px!important;
+  height: 56px;
+  border-radius: 100px;
+  box-shadow: 0 6px 0 0 rgba(17,17,31,.4);
+  background-color: #4a148c;
+  border: 2px solid #11111f;
+  color: white!important;
+  text-decoration: none!important;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.btn{
+  min-width: 200px!important;
+  height: 56px;
+  border-radius: 100px;
+  box-shadow: 0 6px 0 0 rgba(17,17,31,.4);
+  background-color: #fff;
+  border: 2px solid #11111f;
+  color: #11111f!important;
+  text-decoration: none!important;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.footer p{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #373a3c;
+  font-family: Calibri;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  padding: 1rem 0;
   list-style-type: none;
+}
+
+.slick-dots	li {
+  margin: 0 0.25rem;
+}
+
+.slick-dots	button {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
   padding: 0;
+  border: solid;
+  border-radius: 100%;
+  background-color: white;
+  text-indent: -9999px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.slick-dots	li.slick-active button {
+  background-color: black;
 }
 </style>
