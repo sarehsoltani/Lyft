@@ -50,6 +50,20 @@
         </div>
       </div>
     </div>
+    <div class="wrapper mt-5" style="position: relative;height: 700px">
+      <div class="App" style=""> </div>
+      <div  class="IPhone row h-100 col-3" >
+        <slick ref="slick" :options="slickOptions">
+        <img class="col-11 ml-4 w-50x " id="one" value="One" v-model="selected" style="margin-top:98px;" src="https://cdn.lyft.com/brochure/walkthrough-01.81a701e8.jpg">
+        <img class="col-11 ml-4 w-51" id="two" value="two" v-model="selected" style="margin-top:98px;" src="https://cdn.lyft.com/brochure/walkthrough-02.e7359c27.jpg">
+        <img class="col-11 ml-4 w-51" id="three" value="three" v-model="selected" style="margin-top:98px;" src="https://cdn.lyft.com/brochure/walkthrough-03.3e63b376.jpg">
+        <img class="col-11 ml-4 w-51" id="four" value="four" v-model="selected" style="margin-top:98px;" src="https://cdn.lyft.com/brochure/walkthrough-04.6b5f9a19.jpg">
+        </slick>
+          <div style="background-size:50%;background-image:url(https://cdn.lyft.com/brochure/walkthrough-01.81a701e8.jpg);" class="_2VXdTo _1GXO7I _3fkLet _2VXUlm" title="In-app screenshot of driver mode" data-reactid="170"></div>
+      </div>
+      <h3 class="col-4 ml-5 p-4">How Lyft Driving Works</h3>
+      <span>{{ selected }}</span>
+    </div>
   </div>
 </template>
 
